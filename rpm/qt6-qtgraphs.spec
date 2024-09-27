@@ -7,7 +7,7 @@ Release:       0%{?dist}
 Summary:       The Qt Graphs module enables you to visualize data in 3D
 License:       BSD-3-Clause AND GFDL-1.3-no-invariants-only AND GPL-3.0-only
 URL:           https://doc.qt.io/qt-6/qtgraphs-index.html
-Source0:       https://download.qt.io/official_releases/qt/%{majmin}/%{qt_version}/submodules/%{qt_module}-everywhere-src-%{qt_version}.tar.xz
+Source0:       %{name}-%{version}.tar.bz2
 
 BuildRequires: clang
 BuildRequires: cmake
