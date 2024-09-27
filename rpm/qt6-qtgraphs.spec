@@ -12,16 +12,11 @@ Source0:       https://download.qt.io/official_releases/qt/%{majmin}/%{qt_versio
 BuildRequires: clang
 BuildRequires: cmake
 BuildRequires: ninja
-BuildRequires: cmake(Qt6BuildInternals)
-BuildRequires: cmake(Qt6Core)
-BuildRequires: cmake(Qt6Quick)
-BuildRequires: cmake(Qt6Gui)
-BuildRequires: cmake(Qt6Widgets)
-BuildRequires: cmake(Qt6QuickTest)
-BuildRequires: cmake(Qt6QuickWidgets)
-BuildRequires: cmake(Qt6Test)
-BuildRequires: cmake(Qt6Quick3D)
+BuildRequires: qt6-qtbase-devel >= %{qt_version}
 BuildRequires: qt6-qtbase-private-devel
+%{?_qt6:Requires: %{_qt6}%{?_isa} = %{_qt6_version}}
+BuildRequires: qt6-qtdeclarative-devel >= %{qt_version}
+BuildRequires: qt6-qt3d-devel >= %{qt_version}
 
 %description
 The Qt Graphs module enables you to visualize data in 3D as bar,
