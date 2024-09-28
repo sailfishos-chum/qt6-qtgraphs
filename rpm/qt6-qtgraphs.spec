@@ -15,8 +15,9 @@ BuildRequires: ninja
 BuildRequires: qt6-qtbase-devel >= %{qt_version}
 BuildRequires: qt6-qtbase-private-devel
 %{?_qt6:Requires: %{_qt6}%{?_isa} = %{_qt6_version}}
-BuildRequires: qt6-qtdeclarative-devel >= %{qt_version}
-BuildRequires: qt6-qt3d-devel >= %{qt_version}
+BuildRequires: qt6-qtdeclarative-devel
+BuildRequires: qt6-qtquick3d-devel
+BuildRequires: qt6-qtbase-private-devel
 
 %description
 The Qt Graphs module enables you to visualize data in 3D as bar,
