@@ -1,7 +1,7 @@
 %global  qt_version 6.7.2
 
 Name:          qt6-qtgraphs
-Version:       6.7.2
+Version: 6.7.2
 Release:       0%{?dist}
 
 Summary:       The Qt Graphs module enables you to visualize data in 3D
